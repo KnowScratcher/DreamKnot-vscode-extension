@@ -1,0 +1,25 @@
+{
+  "name": "dreamknot",
+  "displayName": "DreamKnot",
+  "description": "DreamKnot is an advanced programming language written in Python",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.98.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "dreamknot",
+      "aliases": ["DreamKnot", "dreamknot"],
+      "extensions": [".dk"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "dreamknot",
+      "scopeName": "source.dreamknot",
+      "path": "./syntaxes/dreamknot.tmLanguage.json"
+    }]
+  }
+}

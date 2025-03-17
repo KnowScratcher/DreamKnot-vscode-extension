@@ -1,0 +1,69 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "DreamKnot",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#entity"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#comment"
+		},
+		{
+			"name": "string.unquoted.dreamknot",
+			"match": "(?<=\\bprint\\b)\\s+(.*?)(?=\\s*\/\/|$)",
+			"captures": {
+				"1": {
+					"name": "string.unquoted.content.dreamknot"
+				}
+			}
+		},
+		{
+			"name": "constant.character.dreamknot",
+			"match": "\\bTrue\\b"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.dreamknot",
+					"match": "\\b(if|while|for|return)\\b"
+				}
+			]
+		},
+		"entity": {
+			"patterns": [
+				{
+					"name": "entity.name.function.dreamknot",
+					"match": "\\b(print)\\b"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.dreamknot",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.dreamknot",
+					"match": "\\\\."
+				}
+			]
+		},
+		"comment": {
+			"patterns": [
+				{
+					"name": "comment.dreamknot",
+					"match": "\/\/(.*)"
+				}
+			]
+		}
+	},
+	"scopeName": "source.dreamknot"
+}

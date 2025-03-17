@@ -1,0 +1,10 @@
+{
+	"Hello World": {
+		"scope": "dreamknot",
+		"prefix": "hello",
+		"body": [
+			"print Hello World"
+		],
+		"description": "Print Hello World"
+	}
+}

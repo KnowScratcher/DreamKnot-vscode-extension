@@ -1,0 +1,41 @@
+print hello world //comment test
+print hello world//comment test
+
+// variable
+myVar = 0
+myVar2 = True
+myVar3 = "hello"
+myVar=0
+myVar2=True
+myVar3="hello"
+
+3 = 2
+print(1+1===3) //true
+
+3=2
+print(1+1===3) //true
+
+// output
+print "hello world"
+print("hello world")
+print("hello world\n")
+
+Available token types:
+    [comment] [string] [keyword] [number] [regexp] [operator] [namespace]
+    [type] [struct] [class] [interface] [enum] [typeParameter] [function]
+    [method] [macro] [variable] [parameter] [property] [label] [decorator]
+
+Available token modifiers:
+    [type.declaration] [type.documentation] [type.readonly] [type.static]
+    [type.abstract] [type.deprecated] [type.modification] [type.async]
+
+Some examples:
+    [class.static.token]     [type.static.abstract]
+    [class.static.token]     [type.static]
+
+    [struct]
+
+    [function.private]
+
+An error case:
+    [notInLegend]
